@@ -1,0 +1,19 @@
+
+<button style="border-radius:50%;"><img src="img/pusshButton2.png"></img></button>
+<img src="img/pusshButton2.png" ng-click="click(2)"></img>
+
+<p>my total : {{counter}}</p>
+<ul style="">
+	<li ng-class="{active:tab === 1 }">
+		<a href ng-click = "tab = 1">Home</a>
+	</li>
+	<li ng-class="{active:tab === 2 }">
+		<a href ng-click = "tab = 2">Shop</a>
+	</li>
+	<li ng-class="{active:tab === 3 }">
+		<a href ng-click = "tab = 3">Mine</a>
+	</li>
+</ul>
+<img src="img/frontPage22.png" ng-show="tab === 1"></img>
+<img src="img/shopPage2.png" ng-show="tab === 2"></img>
+<img src="img/minePage3.png" ng-show="tab === 3"></img>
