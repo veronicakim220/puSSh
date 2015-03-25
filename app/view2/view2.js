@@ -13,7 +13,5 @@ angular.module('myApp.view2', ['ngRoute'])
 	$scope.counter = 1;
 	$scope.click = function(multiplier) {
 		$scope.counter += multiplier;
-		$scope.apple = "hi bero";
 	}
-	$scope.apple = "hi sadu";
 }]);

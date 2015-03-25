@@ -1,5 +1,60 @@
 /* app css stylesheet */
 
+.centering 
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.small-circle {
+  width: 195px;
+  height: 195px;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #FFF;
+  border-radius: 50%;
+  margin: 12.5px;
+}
+
+.smaller-circle {
+  width: 175px;
+  height: 175px;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #3498DB;
+  border-radius: 50%;
+  margin: 10px; 
+  text-align: center;
+}
+.push-button {
+  position: relative;
+  width: 220px ;
+  height: 235px;
+  border-radius: 50%;
+  background-color: #3498DB;
+  border-bottom: 15px solid #2980B9;
+  display: block;
+}
+
+.smaller-circle span {
+  line-height: 170px;
+  color: black;
+  font-family: 'CoolveticaRg-Regular';
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.action-button:active
+{
+  transform: translate(0px,10px);
+  -webkit-transform: translate(0px,10px);
+  border-bottom-color: #a9dcd5;
+}
+
+.background {
+  height: 1334px;
+  background-color: #a9dcd5;
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
