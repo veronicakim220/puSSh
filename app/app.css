@@ -1,10 +1,19 @@
 /* app css stylesheet */
-
-.centering 
-{
-    margin-left: auto;
-    margin-right: auto;
+.my-total {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 0px;
 }
+}
+.counter 
+{
+  font-size: 200px;
+  position: relative;
+  margin-top: 20px;
+}
+
 .small-circle {
   width: 195px;
   height: 195px;
