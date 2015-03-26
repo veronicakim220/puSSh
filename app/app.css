@@ -1,4 +1,11 @@
 /* app css stylesheet */
+.dont-move {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -350px;
+}
 .my-total {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
@@ -29,7 +36,7 @@
   height: 175px;
   display: inline-block;
   overflow: hidden;
-  background-color: #3498DB;
+  background-color: #FF7043;
   border-radius: 50%;
   margin: 10px; 
   text-align: center;
@@ -39,8 +46,8 @@
   width: 220px ;
   height: 235px;
   border-radius: 50%;
-  background-color: #3498DB;
-  border-bottom: 15px solid #2980B9;
+  background-color: #F4511E;
+  border-bottom: 15px solid #BF360C;
   display: block;
 }
 
@@ -57,12 +64,13 @@
 {
   transform: translate(0px,10px);
   -webkit-transform: translate(0px,10px);
-  border-bottom-color: #a9dcd5;
+  border-bottom-color: #B0BEC5;
 }
 
 .background {
-  height: 1334px;
-  background-color: #a9dcd5;
+  height: 700px;
+  width: 400px;
+  background-color: #B0BEC5;
 }
 .menu {
   list-style: none;
