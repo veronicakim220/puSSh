@@ -35,20 +35,21 @@
 		</div>
 	</div> -->
 
-	<div class="row menu-bar" style="margin-top: 15px; margin-bottom: 20px">
+	<div class="row menu-bar" style="margin-top: 20px; margin-bottom: 20px; line-height: 28px;">
 		<div class="col-xs-4" style="text-align: center;">
-			<span ng-click = "tab = 1" ng-class="{active:tab === 1 }" style="
+<!-- 			<p ng-click = "tab = 1" ng-class="{active:tab === 1 }" style="
 			margin-right: 0px;
 			padding-right: 0px;
 			text-align: center;
 			text-decoration: none;
-		"><a href="javascript:void(0)" class="menu-item">home</a></span>
+		"><a href="javascript:void(0)" class="menu-item">home</a></p> -->
+			<a href="javascript:void(0)" ng-click="tab = 1" class="menu-item">home</a>
 		</div>
 		<div class="col-xs-4">
-			<a href="javascript:void(0)" ng-click = "tab = 2" class="menu-item">shop</a>
+			<a href="javascript:void(0)" ng-click="tab = 2" class="menu-item">shop</a>
 		</div>
 		<div class="col-xs-4">
-			<a href="javascript:void(0)" ng-click = "tab = 3" class="menu-item">mine</a>
+			<a href="javascript:void(0)" ng-click="tab = 3" class="menu-item">mine</a>
 		</div>
 	</div>
 

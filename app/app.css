@@ -32,6 +32,10 @@
 }
 .menu-item {
   color: #3b87c8;
+  font-size: 28px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 .menu-item:hover {
   text-decoration: none;
@@ -183,10 +187,4 @@ ul {
 
 li {
     float: left;
-}
-
-a {
-    display: block;
-    width: 60px;
-    background-color: #dddddd;
 }
