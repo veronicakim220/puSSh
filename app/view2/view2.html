@@ -28,14 +28,15 @@
 		<span class="my-total">my total</span>
 	</div>
 	<div class="row text-center">
-		<div class="counter" style="font-family: font-family: 'Francois One', sans-serif; font-size: 100px;
+		<div class="total" style="font-family: font-family: 'Francois One', sans-serif; font-size: 100px;
   position: relative;
   margin-top: 20px;">
-			<span>$ {{counter}}</span>			
+			<span>$ {{total}}</span>			
 		</div>
 	</div> -->
-	<div class="row menu-bar" style="margin-top: 10px;">
-		<div class="col-xs-4" style="text-align: center; margin-bottom: 20px">
+
+	<div class="row menu-bar" style="margin-top: 15px; margin-bottom: 20px">
+		<div class="col-xs-4" style="text-align: center;">
 			<span ng-click = "tab = 1" ng-class="{active:tab === 1 }" style="
 			margin-right: 0px;
 			padding-right: 0px;
@@ -62,23 +63,25 @@
 		<a href ng-click= "tab = 3">mine</a>
 	</li>
 </ul> -->
-	
+
 	<div class="row text-center">
 		<span class="my-total">MY TOTAL</span>
 	</div>
-	<div class="row text-center" style="margin-bottom: 30px;">
+	<div class="row text-center" style="margin-bottom: 10px;">
 		<span style="
 		  font-size: 50px;
 		  font-family: 'Francois One', sans-serif;
 		  position: relative;
 		  margin-top: 20px;
 		  line-height: 50px;
-		">$ {{counter}}</span>
+		">$ {{total}}</span>
 	</div>
-
+	<div class="row text-center" style="margin-bottom: 25px;">
+		<span class="msg">$ {{pushValue}} /push</span>
+	</div>
 	<div class="row center-block" ng-show="tab === 1">
 		<div>
-			<a href="javascript:void(0)" class="push-button action-button center-block" ng-click="click(2)">
+			<a href="javascript:void(0)" class="push-button action-button center-block" ng-click="click(increment+item1.value+item2.value+item3.value+item4.value)">
 				<div class="small-circle">
 					<div class="smaller-circle">
 						<span>pu$$h</span>
@@ -91,19 +94,36 @@
 		<div class="row center-block">
 			<div class="col-xs-6 center-block">
 				<img src="img/flower1.png" style="position: relative; display: block;"></img>
-				<button class="buy-button"><span>$ 3,000</span></button>
-<!-- 							<div style="height: 15px; width: 50px; margin: 0px;"><a href="javascript:void(0)">$ 3,000</a></div> -->
+				<p class="item-desc">+$ 5.00 /push</p>
+				<p class="price">$5000</p>
+<!-- 				<p ng-show="total - 10 < 0 && items.item1.msg" class="msg">push more!</p>
+ -->			<p ng-hide="canBuy(items.item1)" class="msg">PUSH MORE!</p>
+				<button class="buy-button" ng-click="check(items.item1)" ng-show="canBuy(items.item1)"><span>BUY</span></button>
+<!-- 				<p class="sold" ng-hide="items.item1.sell">SOLD</p>
+ --><!-- 							<div style="height: 15px; width: 50px; margin: 0px;"><a href="javascript:void(0)">$ 3,000</a></div> -->
 			</div>
 			<div class="col-xs-6 center-block">
 				<img src="img/flower2.png" style="width: 90px; height: 90px; position: relative; display:block;"></img>
+				<p class="item-desc">+$ 3.00 /push</p>
+				<p class="price">$2000</p>
+				<p ng-hide="canBuy(items.item2)" class="msg">PUSH MORE!</p>
+				<button class="buy-button" ng-click="check(items.item2)" ng-show="canBuy(items.item2)"><span>BUY</span></button>
 			</div>	
 		</div>
 		<div class="row center-block">
 			<div class="col-xs-6 center-block">
-				<img src="img/flower3.png" style="width: 90px; height: 90px; position: relative; display:block;"></img>
+				<img src="img/flower3.png" style="width: 90px; height: 90px; display:block;"></img>
+				<p class="item-desc">+$ 4.00 /push</p>
+				<p class="price">$1000</p>
+				<p ng-hide="canBuy(items.item3)" class="msg">PUSH MORE!</p>
+				<button class="buy-button" ng-click="check(items.item3)" ng-show="canBuy(items.item3)"><span>BUY</span></button>
 			</div>
 			<div class="col-xs-6 center-block">
 				<img src="img/flower4.png" style="width: 90px; height: 90px; position: relative; display:block;"></img>
+				<p class="item-desc">+$ 2.00 /push</p>
+				<p class="price">$200</p>
+				<p ng-hide="canBuy(items.item4)" class="msg">PUSH MORE!</p>
+				<button class="buy-button" ng-click="check(items.item4)" ng-show="canBuy(items.item4)"><span>BUY</span></button>
 			</div>	
 		</div>
 	</div>
