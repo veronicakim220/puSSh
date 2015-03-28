@@ -10,7 +10,7 @@ angular.module('myApp.view2', ['ngRoute'])
 }])
 
 .controller('View2Ctrl', ['$scope',function($scope) {
-	$scope.tab = 3;
+	$scope.tab = 1;
 	$scope.total = 0;
 	$scope.increment = 1;
 	$scope.pushValue = $scope.increment;
