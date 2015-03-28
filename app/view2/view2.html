@@ -49,7 +49,7 @@
 			<a href="javascript:void(0)" ng-click="tab = 2" class="menu-item">shop</a>
 		</div>
 		<div class="col-xs-4">
-			<a href="javascript:void(0)" ng-click="tab = 3" class="menu-item">mine</a>
+			<a href="javascript:void(0)" ng-click="tab = 3" class="menu-item">rank</a>
 		</div>
 	</div>
 
@@ -128,11 +128,20 @@
 			</div>	
 		</div>
 	</div>
+	<div class="row center-block" ng-show="tab === 3">
+		<div class="row">
+			<p class="text-center ranking-title">Rankings</p>
+		</div>
+		<div class="row ranking" style="display: block; padding-left: 50px; padding-right: 50px;">
+			<p>1. Sarah McKenzie: <strong class="ranking-price"><em>$ 3,324,983</em></strong></p>
+			<p>2. Sadruddin Hashmani: <strong class="ranking-price"><em>$ 2,893,231</em></strong></p>
+			<p>3. River Wong: <strong class="ranking-price"><em>$ 1,229,576</em></strong></p>
+			<p>4. Veronica Kim: <strong class="ranking-price"><em>$ 324,709</em></strong></p>
+			<p>5. You: <strong class="ranking-price"><em>$ {{total}}</em></strong></p>
+		</div>
+		<div class="row center-block">
+			<p class="text-center ranking-title" style="color: #455A64;">Keep up!</p>
+		</div>
+	</div>
 
 </div>
-
-
-
-<!-- <img src="img/frontPage22.png" ng-show="tab === 1"></img>
-<img src="img/shopPage2.png" ng-show="tab === 2"></img>
-<img src="img/minePage3.png" ng-show="tab === 3"></img> -->
