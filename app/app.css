@@ -1,4 +1,34 @@
 /* app css stylesheet */
+
+.menu-item {
+  color: #3b87c8;
+}
+.menu-item:hover {
+  text-decoration: none;
+}
+
+.menu-item:link {
+  text-decoration: none;
+}
+
+.please-work {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.menu-bar {
+  font-family: 'Bevan', cursive;
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.menu-bar a {
+  display: block;
+  text-align: center;
+}
 .dont-move {
   position: absolute;
   top: 50%;
@@ -6,13 +36,13 @@
   margin-left: -200px;
   margin-top: -350px;
 }
-.my-total {
-  font-family: 'Lato', sans-serif;
+
+.my-total {  
+  font-family: 'Bevan', cursive;
   font-size: 30px;
   position: relative;
   margin-top: 100px;
   margin-bottom: 0px;
-}
 }
 .counter 
 {
@@ -55,7 +85,8 @@
   line-height: 170px;
   color: black;
   font-family: 'CoolveticaRg-Regular';
-  font-size: 40px;
+/*  font-family: 'Francois One', sans-serif;
+*/  font-size: 40px;
   text-align: center;
 }
 

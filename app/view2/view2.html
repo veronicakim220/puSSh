@@ -34,21 +34,50 @@
 			<span>$ {{counter}}</span>			
 		</div>
 	</div> -->
-<ul>
-	<li ng-class="{active:tab === 1 }" style="font-family: 'Lato', sans-serif; font-size: 30px;">
-		<a href ng-click = "tab = 1">Home</a>
+	<div class="row menu-bar">
+		<div class="col-xs-4" style="text-align: center; margin-bottom: 20px">
+			<span ng-click = "tab = 1" ng-class="{active-menu:tab === 1 }" style="
+			margin-right: 0px;
+			padding-right: 0px;
+			text-align: center;
+			text-decoration: none;
+		"><a href="javascript:void(0)" class="menu-item">home</a></span>
+		</div>
+		<div class="col-xs-4">
+			<a href="javascript:void(0)" ng-click = "tab = 2" class="menu-item">shop</a>
+		</div>
+		<div class="col-xs-4">
+			<a href="javascript:void(0)" ng-click = "tab = 3" class="menu-item">mine</a>
+		</div>
+	</div>
+
+<!-- <ul class="menu-bar">
+	<li ng-class="{active:tab === 1 }">
+		<a href ng-click = "tab = 1">home</a>
 	</li>
 	<li ng-class="{active:tab === 2 }">
-		<a href ng-click = "tab = 2">Shop</a>
+		<a href ng-click = "tab = 2">shop</a>
 	</li>
-</ul>
-	<div class="row">
-		<img src="img/flowertesting.png" style="width: 90px; height: 90px; position: relative;"></img>
-
+	<li>
+		<a href ng-click= "tab = 3">mine</a>
+	</li>
+</ul> -->
+	
+	<div class="row text-center">
+		<span class="my-total">MY TOTAL</span>
+	</div>
+	<div class="row text-center" style="margin-bottom: 30px;">
+		<span style="
+		  font-size: 50px;
+		  font-family: 'Francois One', sans-serif;
+		  position: relative;
+		  margin-top: 20px;
+		  line-height: 50px;
+		">$ {{counter}}</span>
 	</div>
 
 	<div class="row block-center" ng-show="tab === 1">
-		<div style="padding-top: 100px;">
+		<div>
 			<a href="javascript:void(0)" class="push-button action-button center-block" ng-click="click(2)">
 				<div class="small-circle">
 					<div class="smaller-circle">
@@ -80,12 +109,12 @@
 				<div class="col-xs-4"></div>
 				<div class="col-xs-4"></div>
 				<div class="col-xs-4">
-					<img src="../img/flower3.png" style="width: 90px; height: 90px; position: relative;"></img>
+					<img src="img/flower3.png" style="width: 90px; height: 90px; position: relative;"></img>
 				</div>
 			</div>
 			<div class="col-xs-6">
 				<div class="col-xs-4">
-					<img src="../img/flower4.png" style="width: 90px; height: 90px; position: relative;"></img>
+					<img src="img/flower4.png" style="width: 90px; height: 90px; position: relative;"></img>
 				</div>
 				<div class="col-xs-4"></div>
 				<div class="col-xs-4"></div>
