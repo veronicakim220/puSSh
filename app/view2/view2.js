@@ -10,7 +10,7 @@ angular.module('myApp.view2', ['ngRoute'])
 }])
 
 .controller('View2Ctrl', ['$scope',function($scope) {
-	$scope.tab = 1;
+	$scope.tab = 2;
 	$scope.counter = 1;
 	$scope.click = function(multiplier) {
 		$scope.counter += multiplier;

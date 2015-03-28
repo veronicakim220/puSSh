@@ -1,5 +1,10 @@
 /* app css stylesheet */
 
+.buy-button {
+  margin: 0 auto;
+  padding: 0 auto; 
+  display: block; 
+}
 .menu-item {
   color: #3b87c8;
 }
@@ -102,6 +107,18 @@
   height: 700px;
   width: 400px;
   background-color: #B0BEC5;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+div {
+  margin: 0 auto;
+  padding: 0 auto;  
 }
 .menu {
   list-style: none;
